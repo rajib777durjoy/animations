@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>3d portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+  <!-- header section -->
+<div class="headerSection">
+  <!-- navbar part -->
+  <nav class="navBar">
+    <!-- logo item -->
+    <span>3D Animation</span>
+    <!-- navbar items -->
+    <ul>
+        <li>Home</li>
+        <li>Page</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+    </ul>
+    <!-- navbar button -->
+    <div class="joinBtn">
+        <button>Registar</button>
+        <button>Login</button>
+    </div>
+</nav>
+<!-- 3d animation section -->
+ <div class="main">
+  <!-- 3d video -->
+    <video id="video1" src="c26ab812-9995-4840-a62f-d0fa780747f1original1.webm" autoplay loop muted></video>
+    <video id="video2" src="c26ab812-9995-4840-a62f-d0fa780747f1original1.webm" autoplay loop muted></video>
+     
+    <!-- move button -->
+    <div class="box">
+       <div class="btn1">Drak-Mode</div>
+       <div class="btn2">Light-Mode</div>
+    </div>
+ </div>
+</div>
+<div class="aboutSection">
+  <span class="title">About Us</span>
+  <div class="details">
+    <div class="image">
+    <img src="jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="">
+  </div>
+  <div class="text">
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quo. Neque eaque, repudiandae quasi sequi totam praesentium odit! Magni ratione architecto doloremque vitae cumque modi iste rem amet voluptatem non numquam alias ducimus quo magnam eligendi ipsum tempore inventore repellendus ad, id deleniti atque velit cum. Voluptatibus mollitia asperiores quis, libero fugit rerum temporibus ab adipisci pariatur praesentium voluptatem. Excepturi cum fuga praesentium deleniti quos obcaecati veniam fugiat necessitatibus veritatis accusamus, quisquam molestiae ipsam ullam dolorem officia hic ex quae saepe alias. Error, illo. Assumenda, delectus earum, nulla consequuntur ipsam possimus mollitia at iusto, laborum adipisci explicabo! Repellat expedita iure numquam, nulla labore tenetur dolores voluptatibus modi facilis distinctio quam reiciendis fuga quas similique veritatis eos architecto magni aliquid? Expedita at </p>
+</div>
+</div>
+  <div class="iconPart">
+     <a href=""><i class="fa-brands fa-facebook"></i></a>
+     <a href=""><i class="fa-brands fa-instagram"></i></a>
+     <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+     <a href=""><i class="fa-brands fa-twitter"></i></a>
+  </div>
+</div>
+<!-- JavaScript Section Hare -->
+ <script>
+    let animation=document.querySelector("#video1");
+    let animation2=document.querySelector("#video2");
+    let btn1=document.querySelector(".btn1");
+    let btn2=document.querySelector(".btn2");
+
+   btn1.addEventListener("click",function(){
+     document.querySelector("#video2").style.opacity="0";
+     document.querySelector("#video1").style.opacity="1";
+   })
+   btn2.addEventListener("click",function(){
+     document.querySelector("#video1").style.opacity="0";
+     document.querySelector("#video2").style.opacity="1";
+   })
+ </script>
+</body>
+</html>
